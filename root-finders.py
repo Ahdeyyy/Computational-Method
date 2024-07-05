@@ -1,3 +1,4 @@
+
 MAX_ITERATION = 100
 def derivative(f,x ,h = 1e-6):
     """
@@ -8,12 +9,14 @@ def derivative(f,x ,h = 1e-6):
 
 
 
+
 def transform_string_to_func(str):
 
     def f(x):
         return eval(str)
 
     return f
+
 
 
 def bisection_method(f, precision = 0.0, a = 1, b = -1):
@@ -88,8 +91,8 @@ def newton_raphson_method_recursive(f, precision = 0.0, a = 1, i = 0):
 
 
 
-
-print(f"root = {bisection_method("x**3 - x - 1")}")
-print(f"root = {newton_raphson_method("x**3 - x - 1")}")
-print(f"root = {bisection_method("x**3 - 2*x - 5")}")
-print(f"root = {newton_raphson_method("x**3 - 2*x - 5", a=2)}")
+#
+# print(f"root = {bisection_method("x**3 - x - 1")}")
+# print(f"root = {newton_raphson_method("x**3 - x - 1")}")
+# print(f"root = {bisection_method("x**3 - 2*x - 5")}")
+# print(f"root = {newton_raphson_method("x**3 - 2*x - 5", a=2)}")
